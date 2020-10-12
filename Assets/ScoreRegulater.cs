@@ -25,10 +25,7 @@ public class ScoreRegulater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //ScoreTextに点数を表示
-        this.scoreText.GetComponent<Text>().text = "Score" + score;
-
-        //ボールがオブジェクトに衝突した場合のコード
+       
 
     }
 
@@ -54,7 +51,10 @@ public class ScoreRegulater : MonoBehaviour
         {
             score += this.smallCloud;
         }
-        
+
+        //ScoreTextに点数を表示
+        this.scoreText.GetComponent<Text>().text = "Score" + score;
+
 
     }
 }
